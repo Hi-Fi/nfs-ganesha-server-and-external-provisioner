@@ -38,7 +38,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
- 
+
       - name: Lower case owner
         id: owner
         run: |
@@ -53,4 +53,4 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x
           push: true
           # keep tag in sync with deploy/base/Dockerfile:GANESHA_VERSION
-          tags: ghcr.io/${{ steps.owner.outputs.repo-owner }}/nfs-ganesha:V4.0.8
+          tags: ghcr.io/${{ steps.owner.outputs.repo-owner }}/nfs-ganesha:V6.2
