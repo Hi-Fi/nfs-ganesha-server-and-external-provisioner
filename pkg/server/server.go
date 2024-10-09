@@ -63,6 +63,7 @@ NFS_Core_Param
 	MNT_Port = 20048;
 	NLM_Port = 32803;
 	fsid_device = true;
+	allow_set_io_flusher_fail = true;
 }
 
 NFSV4
