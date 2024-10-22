@@ -57,8 +57,8 @@ their default values.
 |:-------------------------------|:----------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
 | `extraArgs` | [Additional command line arguments](https://github.com/kubernetes-incubator/external-storage/blob/HEAD/nfs/docs/deployment.md#arguments) | `{}`
 | `imagePullSecrets`             | Specify image pull secrets                                                                                      | `nil` (does not add image pull secrets to deployed pods) |
-| `image.repository`             | The image repository to pull from                                                                               | `registry.k8s.io/sig-storage/nfs-provisioner:v4.0.8`         |
-| `image.tag`                    | The image tag to pull                                                                                           | `v4.0.8`                                                 |
+| `image.repository`             | The image repository to pull from                                                                               | `registry.k8s.io/sig-storage/nfs-provisioner:v6.2`         |
+| `image.tag`                    | The image tag to pull                                                                                           | `v6.2`                                                 |
 | `image.digest`                 | The image digest to pull, this option has precedence over `image.tag`                                           | `nil`                                                    |
 | `image.pullPolicy`             | Image pull policy                                                                                               | `IfNotPresent`                                           |
 | `service.type`                 | service type                                                                                                    | `ClusterIP`                                              |
@@ -79,7 +79,7 @@ their default values.
 | `storageClass.name`            | The name to assign the created StorageClass                                                                     | `nfs`                                                    |
 | `storageClass.allowVolumeExpansion` | Allow base storage PCV to be dynamically resizeable (set to null to disable )                              | `true                                                    |
 | `storageClass.parameters`      | Parameters for StorageClass                                                                                     | `{}`                                                     |
-| `storageClass.mountOptions`    | Mount options for StorageClass                                                                                  | `[ "vers=3" ]`                                           |
+| `storageClass.mountOptions`    | Mount options for StorageClass                                                                                  | `[ "vers=4.1" ]`                                           |
 | `storageClass.reclaimPolicy`   | ReclaimPolicy field of the class, which can be either Delete or Retain                                          | `Delete`                                                    |
 | `resources`                    | Resource limits for nfs-server-provisioner pod                                                                          | `{}`                                                     |
 | `nodeSelector`                 | Map of node labels for pod assignment                                                                           | `{}`                                                     |
