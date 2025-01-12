@@ -63,7 +63,7 @@ spec:
       serviceAccount: nfs-provisioner
       containers:
         - name: nfs-provisioner
-          image: registry.k8s.io/sig-storage/nfs-provisioner:v4.0.8
+          image: registry.k8s.io/sig-storage/nfs-provisioner:v6.5
           ports:
             - name: nfs
               containerPort: 2049
